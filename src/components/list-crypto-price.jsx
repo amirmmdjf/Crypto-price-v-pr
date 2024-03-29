@@ -34,7 +34,7 @@ const Test = () => {
 
 
     return (
-        <div className='w-[900px] m-auto my-14 max-[600px]:w-[450px]' >
+        <div className='w-[900px] m-auto my-14 max-[600px]:w-[450px] max-[400px]:w-[350px]' >
             <TableContainer component={Paper}>
                 <Table sx={{ minWidth: 350 }} aria-label="sticky table">
                     <TableHead className='bg-gray-100' style={{
