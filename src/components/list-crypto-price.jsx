@@ -34,6 +34,8 @@ const Test = () => {
 
 
     return (
+    <>
+        <h2 className='text-center'>Crypto price</h2>
         <div className='w-[900px] m-auto my-14 max-[600px]:w-[450px] max-[400px]:w-[350px]' >
             <TableContainer component={Paper}>
                 <Table sx={{ minWidth: 350 }} aria-label="sticky table">
@@ -111,6 +113,7 @@ const Test = () => {
                 </Table>
             </TableContainer>
         </div>
+    </>
     );
 }
 
