@@ -29,7 +29,7 @@ const Test = () => {
         fetchData(); // Initial fetch
 
         // Cleanup function
-        return () => clearTimeout(fetchData);
+        return () => clearTimeout(fetchData)
     }, []);
 
 
