@@ -1,0 +1,39 @@
+.name {
+    font-size: 32px;
+}
+
+@media (max-width: 600px) {
+    .hideOnSmallScreen {
+        display: none !important;
+        /* background-color: yellow; */
+    }
+    .name-col{
+        /* background-color: yellow ; */
+        width: 20%;
+    }
+    .price-col{
+        width: 45%;
+        /* background-color: pink; */
+    }
+    .oneday-col{
+        width: 20%;
+    }
+}
+
+@media (max-width: 400px) {
+    .hideOnSmallScreen {
+        display: none !important;
+        /* background-color: yellow; */
+    }
+    .name-col{
+        /* background-color: yellow ; */
+        width: 20%;
+    }
+    .price-col{
+        width: 45%;
+        /* background-color: pink; */
+    }
+    .oneday-col{
+        width: 20%;
+    }
+}
