@@ -32,10 +32,9 @@ const Test = () => {
         return () => clearTimeout(fetchData)
     }, []);
 
-
     return (
         <>
-            <h2 className='text-center mt-8 text-[28px] font-bold text-white'>Crypto price</h2>
+            <h2 className='text-center mt-8 text-[28px] font-bold text-white'>قیمت لحظه ای کریپتو</h2>
             <div className='w-[900px] m-auto my-14 max-[600px]:w-[450px] max-[400px]:w-[350px]' >
                 <TableContainer component={Paper}>
                     <Table sx={{ minWidth: 350 }} aria-label="sticky table">
@@ -46,11 +45,11 @@ const Test = () => {
                             zIndex: '999',
                         }}>
                             <TableRow >
-                                <TableCell className='name-col' style={{ fontSize: '17px', fontWeight: '600' }}>Name</TableCell>
-                                <TableCell className='price-col' style={{ fontSize: '17px', fontWeight: '600' }} align="center">Price</TableCell>
-                                <TableCell className='hideOnSmallScreen' style={{ fontSize: '17px', fontWeight: '600' }} align="center">1h %</TableCell>
-                                <TableCell className='oneday-col' style={{ fontSize: '17px', fontWeight: '600' }} align="center">24h %</TableCell>
-                                <TableCell className='hideOnSmallScreen' style={{ fontSize: '17px', fontWeight: '600' }} align="center">Market Cap</TableCell>
+                                <TableCell className='name-col' style={{ fontSize: '17px', fontWeight: '600', paddingRight: '30px' }} align="right">نام رمز ارز</TableCell>
+                                <TableCell className='price-col' style={{ fontSize: '17px', fontWeight: '600' }} align="center">قیمت</TableCell>
+                                <TableCell className='hideOnSmallScreen' style={{ fontSize: '17px', fontWeight: '600' }} align="center">تغییرات 1 ساعته</TableCell>
+                                <TableCell className='oneday-col' style={{ fontSize: '17px', fontWeight: '600' }} align="center">تغییرات 1 روزه</TableCell>
+                                <TableCell className='hideOnSmallScreen' style={{ fontSize: '17px', fontWeight: '600' }} align="center">حجم معاملات</TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
@@ -65,7 +64,11 @@ const Test = () => {
                                         }}
                                         component="th" scope="row">
                                         <div className='flex'>
-                                            <h3 className='mr-3'>{index + 1}</h3>  <h3>{crypto.name}</h3>
+                                            <h3 className='ml-3'>{index + 1}</h3>
+                                            <div className='flex'>
+                                                <h3>{crypto.symbol} / </h3>
+                                                <h2 className='text-[#8c8d8f] mx-[5px]'>USDT</h2>
+                                            </div>
                                         </div>
                                     </TableCell>
 
