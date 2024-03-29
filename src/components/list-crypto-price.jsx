@@ -35,8 +35,8 @@ const Test = () => {
     return (
         <>
             <h2 className='text-center mt-8 text-[28px] font-bold text-white'>قیمت لحظه ای کریپتو</h2>
-            <div className='w-[900px] m-auto my-14 max-[600px]:w-[450px] max-[400px]:w-[350px]' >
-                <TableContainer component={Paper}>
+            <div className='w-[900px] m-auto my-14 max-[600px]:w-[450px] max-[400px]:w-[350px]'>
+                <TableContainer component={Paper} className='table'>
                     <Table sx={{ minWidth: 350 }} aria-label="sticky table">
                         <TableHead className='bg-gray-100' style={{
                             marginBottom: '100px',
