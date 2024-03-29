@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Crypto-price-v-pr/static/css/main.9249ff3b.css",
+    "main.css": "/Crypto-price-v-pr/static/css/main.e45ceb4a.css",
     "main.js": "/Crypto-price-v-pr/static/js/main.7ccc66a8.js",
     "index.html": "/Crypto-price-v-pr/index.html",
-    "main.9249ff3b.css.map": "/Crypto-price-v-pr/static/css/main.9249ff3b.css.map",
+    "main.e45ceb4a.css.map": "/Crypto-price-v-pr/static/css/main.e45ceb4a.css.map",
     "main.7ccc66a8.js.map": "/Crypto-price-v-pr/static/js/main.7ccc66a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.9249ff3b.css",
+    "static/css/main.e45ceb4a.css",
     "static/js/main.7ccc66a8.js"
   ]
 }
