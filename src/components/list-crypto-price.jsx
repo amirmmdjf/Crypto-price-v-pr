@@ -13,6 +13,10 @@ const Test = () => {
 
     const [data, setData] = useState([]);
 
+    data.splice(2, 1)
+
+
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -54,7 +58,7 @@ const Test = () => {
                         </TableHead>
                         <TableBody>
                             {/* Render table rows based on 'data' state */}
-                            {data.slice(0, 150).map((crypto, index) => (
+                            {data.slice(0, 100).map((crypto, index) => (
                                 <TableRow key={crypto.id} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
 
                                     <TableCell
